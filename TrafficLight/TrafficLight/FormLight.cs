@@ -52,8 +52,8 @@ namespace TrafficLight
         private int              serverPort       = 5000;
         private int              bufferSize       = 200;
         private TcpClient        socketClient     = null;
-        //private String           serverName       = "eeyore.fost.plymouth.ac.uk";  //A computer in my office.
-        private String serverName = "127.0.0.1";
+        private String           serverName       = "eeyore.fost.plymouth.ac.uk";  //A computer in my office.
+        //private String serverName = "127.0.0.1";
         private NetworkStream    connectionStream = null;
         private BinaryReader     inStream         = null;
         private BinaryWriter     outStream        = null;
@@ -61,7 +61,8 @@ namespace TrafficLight
         private bool manualOverride = false;
         Semaphore changing = new Semaphore(1, 1);
         private int myID = 2;
-        private string myIP = "127.0.0.1";
+        private string myIP = "141.163.100.5";
+
         
 
         //*******************************************************************//
@@ -92,7 +93,7 @@ namespace TrafficLight
 
         //pretty much finshed.
         //should be only point at which lights get touched
-        private void change()
+        public void change()
         {
             changing.WaitOne();
             //if true the lights are off
@@ -208,7 +209,15 @@ namespace TrafficLight
                     //OFF
                 case 3:this.Close();
                     break;
+                    //Case 4 = change lights
                 case 4:
+                    if (manualOverride ==true)
+                    {
+                        //starts a new thread to change the light leaving from thread open for keepalives
+                        Thread changer = new Thread(change);
+                        changer.Start();
+                    }
+                    
                     break;
                 case 5:
                     break;

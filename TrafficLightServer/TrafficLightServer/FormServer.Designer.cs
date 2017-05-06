@@ -31,8 +31,6 @@
             this.buttonConnect = new System.Windows.Forms.Button();
             this.listBoxOutput = new System.Windows.Forms.ListBox();
             this.labelStatus = new System.Windows.Forms.Label();
-            this.comboBoxLightColour = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.lsbActiveConnections = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxIPToAdd = new System.Windows.Forms.TextBox();
@@ -50,6 +48,7 @@
             this.txtLocalID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnChange = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonConnect
@@ -82,31 +81,6 @@
             this.labelStatus.Size = new System.Drawing.Size(50, 18);
             this.labelStatus.TabIndex = 2;
             this.labelStatus.Text = "Status";
-            // 
-            // comboBoxLightColour
-            // 
-            this.comboBoxLightColour.Enabled = false;
-            this.comboBoxLightColour.FormattingEnabled = true;
-            this.comboBoxLightColour.Items.AddRange(new object[] {
-            "Red",
-            "Amber",
-            "Green"});
-            this.comboBoxLightColour.Location = new System.Drawing.Point(901, 76);
-            this.comboBoxLightColour.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBoxLightColour.Name = "comboBoxLightColour";
-            this.comboBoxLightColour.Size = new System.Drawing.Size(51, 21);
-            this.comboBoxLightColour.TabIndex = 5;
-            this.comboBoxLightColour.SelectedIndexChanged += new System.EventHandler(this.comboBoxLightColour_SelectedIndexChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(843, 79);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Set colour";
             // 
             // lsbActiveConnections
             // 
@@ -199,7 +173,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(843, 35);
+            this.label1.Location = new System.Drawing.Point(530, 414);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 13);
@@ -208,7 +182,7 @@
             // 
             // btnControl
             // 
-            this.btnControl.Location = new System.Drawing.Point(519, 415);
+            this.btnControl.Location = new System.Drawing.Point(519, 499);
             this.btnControl.Name = "btnControl";
             this.btnControl.Size = new System.Drawing.Size(160, 58);
             this.btnControl.TabIndex = 18;
@@ -238,7 +212,7 @@
             // 
             // btnOff
             // 
-            this.btnOff.Location = new System.Drawing.Point(696, 415);
+            this.btnOff.Location = new System.Drawing.Point(698, 499);
             this.btnOff.Name = "btnOff";
             this.btnOff.Size = new System.Drawing.Size(125, 58);
             this.btnOff.TabIndex = 20;
@@ -278,11 +252,22 @@
             this.label6.TabIndex = 22;
             this.label6.Text = "Local ID";
             // 
+            // btnChange
+            // 
+            this.btnChange.Location = new System.Drawing.Point(519, 442);
+            this.btnChange.Name = "btnChange";
+            this.btnChange.Size = new System.Drawing.Size(160, 51);
+            this.btnChange.TabIndex = 23;
+            this.btnChange.Text = "Change";
+            this.btnChange.UseVisualStyleBackColor = true;
+            this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
+            // 
             // FormServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1124, 585);
+            this.Controls.Add(this.btnChange);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtLocalID);
@@ -296,8 +281,6 @@
             this.Controls.Add(this.labelRed);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBoxLightColour);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxIPToAdd);
             this.Controls.Add(this.labelStatus);
@@ -320,8 +303,6 @@
         private System.Windows.Forms.Button buttonConnect;
         private System.Windows.Forms.ListBox listBoxOutput;
         private System.Windows.Forms.Label labelStatus;
-        private System.Windows.Forms.ComboBox comboBoxLightColour;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox lsbActiveConnections;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxIPToAdd;
@@ -339,6 +320,7 @@
         private System.Windows.Forms.TextBox txtLocalID;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnChange;
     }
 }
 

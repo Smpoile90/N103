@@ -60,8 +60,8 @@ namespace TrafficLightServer
         private int              serverPort       = 5000;
         private int              bufferSize       = 200;
         private TcpClient        socketClient     = null;
-        //private String           serverName       = "eeyore.fost.plymouth.ac.uk";  //A computer in my office.
-        private String serverName = "127.0.0.1";
+        private String           serverName       = "eeyore.fost.plymouth.ac.uk";  //A computer in my office.
+        //private String serverName = "127.0.0.1";
         private NetworkStream    connectionStream = null;
         private BinaryReader     inStream         = null;
         private BinaryWriter     outStream        = null;
@@ -181,7 +181,9 @@ namespace TrafficLightServer
                 // enable other components.                                 //
                 //**********************************************************//
                 buttonConnect.Enabled       = false;
-                comboBoxLightColour.Enabled = true;
+                btnChange.Enabled = true;
+                btnControl.Enabled = true;
+                btnOff.Enabled = true;
 
                 //INSTANTIATING THE CONNECTION OBJECT
                 threadConnection = new ThreadConnection(uiContext, socketClient, this);
@@ -195,22 +197,6 @@ namespace TrafficLightServer
 
             }
         }
-
-
-
-
-
-
-        //*********************************************************************//
-        // The item in the combo box has been changed.  Transmit it.           // 
-        //*********************************************************************//
-        private void comboBoxLightColour_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            String toSendIP = lsbActiveConnections.SelectedItem.ToString();
-            String colour =  (String) comboBoxLightColour.SelectedItem;
-            //sendString(colour, toSendIP);
-        }
-
 
         //**********************************************************************//
         // Send a string to the IP you give.  The string and IP are bundled up  //
@@ -397,7 +383,7 @@ namespace TrafficLightServer
             //sendString("Query", toSendIP);
             Packet query = new Packet(toSendIP, 0, myID, 0, localIP);
             sendPacket(query);
-        }
+        } //working
 
         private void sendTakover()
         {
@@ -405,6 +391,15 @@ namespace TrafficLightServer
             lsbActiveConnections.Invoke((MethodInvoker)delegate { toSendIP = lsbActiveConnections.SelectedItem.ToString(); });
             //sendString("Query", toSendIP);
             Packet query = new Packet(toSendIP, 0, myID, 2, localIP);
+            sendPacket(query);
+        } //working
+
+        private void sendChange()
+        {
+            string toSendIP = "";
+            lsbActiveConnections.Invoke((MethodInvoker)delegate { toSendIP = lsbActiveConnections.SelectedItem.ToString(); });
+            //sendString("Query", toSendIP);
+            Packet query = new Packet(toSendIP, 0, myID, 4, localIP);
             sendPacket(query);
         }
 
@@ -469,6 +464,11 @@ namespace TrafficLightServer
         private void btnOff_Click(object sender, EventArgs e)
         {
             sendOff();
+        }
+
+        private void btnChange_Click(object sender, EventArgs e)
+        {
+            sendChange();
         }
     }   // End of classy class.
 }       // End of namespace

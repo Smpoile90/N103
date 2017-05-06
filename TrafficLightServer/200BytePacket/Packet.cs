@@ -17,10 +17,13 @@ namespace _200BytePacket
         public int buffersize = 200;
         public string recipientIP;
         public byte[] lightState = { 0,0,0,0};
+        private byte[] key = { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        private byte[] iv = { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
         //CONSTRUCT PACKET OBJECT FROM BYTE[]
         public Packet(byte[] packet)
         {
+            decrypt(packet);
 
             //UNPACK SENT BYTES
             string[] x1 = new string[4];
@@ -123,7 +126,7 @@ namespace _200BytePacket
             //LOOP FOR MESSAGE CODE 
             for (int i = 0; i < 2; i++)
             {
-                packet[bufferIndex]= MessageCodeBytes[i];
+                packet[bufferIndex] = MessageCodeBytes[i];
                 bufferIndex++;
             }
             //add sender IP
@@ -141,10 +144,67 @@ namespace _200BytePacket
                 bufferIndex++;
             }
 
-            //Encrypt data portion
+            encrypt(packet);
 
             return packet;    //End of packet (even though it is always 200 bytes)
         }
 
+
+        private byte[] encrypt(byte[] packet)
+        {
+            //Encrypt data portion
+
+            AesManaged aesm = new AesManaged();
+
+            var encryptor = aesm.CreateEncryptor(key, iv);
+
+            MemoryStream ms = new MemoryStream();
+            CryptoStream cs = new CryptoStream(ms, encryptor, CryptoStreamMode.Write);
+            cs.Write(packet, 4, 63);
+            cs.FlushFinalBlock();
+            byte[] encrypted = ms.ToArray();
+
+            for (int i = 0; i < encrypted.Length; i++)
+            {
+                packet[i + 4] = encrypted[i];
+            }
+            cs.Close();
+            ms.Close();
+            return packet;
+
+        }
+
+        private byte[] decrypt(byte[] packet)
+        {
+            //split cyphertest from header
+            byte[] encrypted = new byte[64];
+
+            for (int i = 0; i < 64; i++)
+            {
+                encrypted[i] = packet[i + 4];
+            }
+
+
+            AesManaged aesm = new AesManaged();
+
+            var decryptor = aesm.CreateDecryptor(key, iv);
+
+            MemoryStream ms = new MemoryStream(encrypted);
+
+            CryptoStream cs = new CryptoStream(ms, decryptor, CryptoStreamMode.Read);
+
+
+            
+            byte[] decrypted = new byte[64];
+            cs.Read(decrypted, 0, 63);
+
+            for (int i = 0; i < decrypted.Length; i++)
+            {
+                packet[i + 4] = decrypted[i];
+            }
+
+            return packet;
+
+        }
     }
 }
