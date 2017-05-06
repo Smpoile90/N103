@@ -178,20 +178,13 @@ namespace TrafficLight
         }
 
 
-
-        //*********************************************************************//
-        // Message was posted back to us.  This is to get over the C# threading//
-        // rules whereby we can only touch the UI components from the thread   //
-        // that created them, which is the form's main thread.                 // 
-        //*********************************************************************//
+        //POSTS MESSAGE FROM LISTEN THREAD TO MAIN FORM THREAD
         public void MessageReceived(Object message)
         {
             Packet command = (Packet)message;
             messageManager(command);
-            //String command = (String)message;
-            //listBoxOutput.Items.Add(command);
-            //ChangeLights(command);
         }
+        //DETERMINES WHAT TO DO WITH MESSAGES BASED ON MESSAGE CODE
         private void messageManager(Packet message)
         {
             switch(message.messageCode)
@@ -223,55 +216,6 @@ namespace TrafficLight
                     break;
             }
         }
-
-
-
-        //*********************************************************************//
-        // Change the status of the lights.                                    //
-        //*********************************************************************//
-        //private void ChangeLights(string command)
-        //{
-        //    if (command == null) return;    // Nothing to do.
-
-        //    if (command.Contains(theNameOfThis))
-        //    {
-        //        return;
-        //    }
-
-
-        //    if (command.Contains("Control"))
-        //    {
-        //        manualChange();
-        //    }
-        //        if (command.Contains("Change"))
-        //    {
-        //        change();
-        //    }
-
-        //    if (command.Contains("Query"))
-        //    {
-        //        string message = "";
-        //        if (labelRed.Visible == false && labelAmber.Visible == false && labelGreen.Visible == false)
-        //        {
-        //            message = "Off";
-        //        }
-        //        else if (labelRed.Visible)
-        //        {
-        //            message = message +"Red";
-        //        }
-        //        if (labelAmber.Visible)
-        //        {
-        //            message = message +"Amber";
-        //        }
-        //        if(labelGreen.Visible)
-        //        {
-        //            message = message+"Green";
-        //        }
-        //        message = message + manualOverride;
-        //        sendString(message, textBoxLightIP.Text);
-        //    }
-        //}
-
 
 
         //*********************************************************************//
@@ -346,9 +290,6 @@ namespace TrafficLight
                 Console.WriteLine("Created new connection class");
             }
         }
-
-
-
 
         //**********************************************************************//
         // Button cluck for the car arrived button.  All it does is send the    //
