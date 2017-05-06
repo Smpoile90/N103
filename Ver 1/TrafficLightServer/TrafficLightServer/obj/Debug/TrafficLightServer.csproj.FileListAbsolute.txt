@@ -1,0 +1,18 @@
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLightServer\TrafficLightServer\bin\Debug\TrafficLightServer.exe.config
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLightServer\TrafficLightServer\bin\Debug\TrafficLightServer.exe
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLightServer\TrafficLightServer\bin\Debug\TrafficLightServer.pdb
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLightServer\TrafficLightServer\obj\Debug\TrafficLightServer.csprojResolveAssemblyReference.cache
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLightServer\TrafficLightServer\obj\Debug\TrafficLightServer.Properties.Resources.resources
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLightServer\TrafficLightServer\obj\Debug\TrafficLightServer.csproj.GenerateResource.Cache
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLightServer\TrafficLightServer\obj\Debug\TrafficLightServer.exe
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLightServer\TrafficLightServer\obj\Debug\TrafficLightServer.pdb
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLightServer\TrafficLightServer\obj\Debug\TrafficLightServer.FormServer.resources
+E:\NET103NigelsBasedSolution\TrafficLightServer\TrafficLightServer\bin\Debug\TrafficLightServer.exe.config
+E:\NET103NigelsBasedSolution\TrafficLightServer\TrafficLightServer\obj\Debug\TrafficLightServer.exe
+E:\NET103NigelsBasedSolution\TrafficLightServer\TrafficLightServer\obj\Debug\TrafficLightServer.pdb
+E:\NET103NigelsBasedSolution\TrafficLightServer\TrafficLightServer\bin\Debug\TrafficLightServer.exe
+E:\NET103NigelsBasedSolution\TrafficLightServer\TrafficLightServer\bin\Debug\TrafficLightServer.pdb
+E:\NET103NigelsBasedSolution\TrafficLightServer\TrafficLightServer\obj\Debug\TrafficLightServer.csprojResolveAssemblyReference.cache
+E:\NET103NigelsBasedSolution\TrafficLightServer\TrafficLightServer\obj\Debug\TrafficLightServer.FormServer.resources
+E:\NET103NigelsBasedSolution\TrafficLightServer\TrafficLightServer\obj\Debug\TrafficLightServer.Properties.Resources.resources
+E:\NET103NigelsBasedSolution\TrafficLightServer\TrafficLightServer\obj\Debug\TrafficLightServer.csproj.GenerateResource.Cache

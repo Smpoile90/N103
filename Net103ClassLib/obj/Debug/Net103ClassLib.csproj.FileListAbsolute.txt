@@ -1,0 +1,9 @@
+E:\NET103\Net103ClassLib\bin\Debug\Net103ClassLib.dll
+E:\NET103\Net103ClassLib\bin\Debug\Net103ClassLib.pdb
+E:\NET103\Net103ClassLib\obj\Debug\Net103ClassLib.dll
+E:\NET103\Net103ClassLib\obj\Debug\Net103ClassLib.pdb
+E:\NET103NigelsBasedSolution\Net103ClassLib\bin\Debug\Net103ClassLib.dll
+E:\NET103NigelsBasedSolution\Net103ClassLib\bin\Debug\Net103ClassLib.pdb
+E:\NET103NigelsBasedSolution\Net103ClassLib\obj\Debug\Net103ClassLib.csprojResolveAssemblyReference.cache
+E:\NET103NigelsBasedSolution\Net103ClassLib\obj\Debug\Net103ClassLib.dll
+E:\NET103NigelsBasedSolution\Net103ClassLib\obj\Debug\Net103ClassLib.pdb

@@ -1,0 +1,5 @@
+E:\NET103NigelsBasedSolution\TrafficLightServer\200BytePacket\bin\Debug\200BytePacket.dll
+E:\NET103NigelsBasedSolution\TrafficLightServer\200BytePacket\bin\Debug\200BytePacket.pdb
+E:\NET103NigelsBasedSolution\TrafficLightServer\200BytePacket\obj\Debug\200BytePacket.csprojResolveAssemblyReference.cache
+E:\NET103NigelsBasedSolution\TrafficLightServer\200BytePacket\obj\Debug\200BytePacket.dll
+E:\NET103NigelsBasedSolution\TrafficLightServer\200BytePacket\obj\Debug\200BytePacket.pdb

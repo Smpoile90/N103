@@ -1,0 +1,36 @@
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLight\TrafficLight\bin\Debug\TrafficLight.exe.config
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLight\TrafficLight\obj\Debug\TrafficLight.csprojResolveAssemblyReference.cache
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLight\TrafficLight\obj\Debug\TrafficLight.FormTrafficLight.resources
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Properties.Resources.resources
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLight\TrafficLight\obj\Debug\TrafficLight.csproj.GenerateResource.Cache
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLight\TrafficLight\bin\Debug\TrafficLight.exe
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLight\TrafficLight\bin\Debug\TrafficLight.pdb
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLight\TrafficLight\obj\Debug\TrafficLight.exe
+C:\Nigel\Coarse Stuff\COM105\C# Stuff\Sockets\Traffic Lights\TrafficLight\TrafficLight\obj\Debug\TrafficLight.pdb
+C:\Users\hhewett\Downloads\TrafficLight\TrafficLight\TrafficLight\bin\Debug\TrafficLight.exe.config
+C:\Users\hhewett\Downloads\TrafficLight\TrafficLight\TrafficLight\obj\Debug\TrafficLight.exe
+C:\Users\hhewett\Downloads\TrafficLight\TrafficLight\TrafficLight\obj\Debug\TrafficLight.pdb
+C:\Users\hhewett\Downloads\TrafficLight\TrafficLight\TrafficLight\bin\Debug\TrafficLight.exe
+C:\Users\hhewett\Downloads\TrafficLight\TrafficLight\TrafficLight\obj\Debug\TrafficLight.csprojResolveAssemblyReference.cache
+C:\Users\hhewett\Downloads\TrafficLight\TrafficLight\TrafficLight\obj\Debug\TrafficLight.FormTrafficLight.resources
+C:\Users\hhewett\Downloads\TrafficLight\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Properties.Resources.resources
+C:\Users\hhewett\Downloads\TrafficLight\TrafficLight\TrafficLight\obj\Debug\TrafficLight.csproj.GenerateResource.Cache
+C:\Users\hhewett\Downloads\TrafficLight\TrafficLight\TrafficLight\bin\Debug\TrafficLight.pdb
+C:\Users\smpoile\Downloads\TrafficLight\TrafficLight\bin\Debug\TrafficLight.exe.config
+C:\Users\smpoile\Downloads\TrafficLight\TrafficLight\obj\Debug\TrafficLight.exe
+C:\Users\smpoile\Downloads\TrafficLight\TrafficLight\obj\Debug\TrafficLight.pdb
+C:\Users\smpoile\Downloads\TrafficLight\TrafficLight\bin\Debug\TrafficLight.exe
+C:\Users\smpoile\Downloads\TrafficLight\TrafficLight\bin\Debug\TrafficLight.pdb
+C:\Users\smpoile\Downloads\TrafficLight\TrafficLight\obj\Debug\TrafficLight.csprojResolveAssemblyReference.cache
+C:\Users\smpoile\Downloads\TrafficLight\TrafficLight\obj\Debug\TrafficLight.FormTrafficLight.resources
+C:\Users\smpoile\Downloads\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Properties.Resources.resources
+C:\Users\smpoile\Downloads\TrafficLight\TrafficLight\obj\Debug\TrafficLight.csproj.GenerateResource.Cache
+E:\NET103NigelsBasedSolution\TrafficLight\TrafficLight\bin\Debug\TrafficLight.exe.config
+E:\NET103NigelsBasedSolution\TrafficLight\TrafficLight\obj\Debug\TrafficLight.exe
+E:\NET103NigelsBasedSolution\TrafficLight\TrafficLight\obj\Debug\TrafficLight.pdb
+E:\NET103NigelsBasedSolution\TrafficLight\TrafficLight\bin\Debug\TrafficLight.exe
+E:\NET103NigelsBasedSolution\TrafficLight\TrafficLight\bin\Debug\TrafficLight.pdb
+E:\NET103NigelsBasedSolution\TrafficLight\TrafficLight\obj\Debug\TrafficLight.csprojResolveAssemblyReference.cache
+E:\NET103NigelsBasedSolution\TrafficLight\TrafficLight\obj\Debug\TrafficLight.FormTrafficLight.resources
+E:\NET103NigelsBasedSolution\TrafficLight\TrafficLight\obj\Debug\TrafficLight.Properties.Resources.resources
+E:\NET103NigelsBasedSolution\TrafficLight\TrafficLight\obj\Debug\TrafficLight.csproj.GenerateResource.Cache
